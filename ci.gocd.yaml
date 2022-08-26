@@ -1,13 +1,18 @@
+format_version: 9
+environments:
+  testing:
+    environment_variables:
+      DEPLOYMENT: testing
 pipelines:
-  mypipe:
+  mhce:
     group: mygroup
     materials:
       mygit:
-        git: http://example.com/mygit.git
+        git: https://gitlab.com/qnib-metahub/community-edition.git
     stages:
       - build:
           jobs:
             build:
               tasks:
                - exec:
-                   command: make
+                   command: echo
