@@ -1,11 +1,6 @@
 format_version: 9
-environments:
-  testing:
-    environment_variables:
-      DEPLOYMENT: testing
 pipelines:
   mhce:
-    group: default
     materials:
       mygit:
         git: https://gitlab.com/qnib-metahub/community-edition.git
