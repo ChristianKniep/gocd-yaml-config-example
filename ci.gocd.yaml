@@ -5,7 +5,7 @@ environments:
       DEPLOYMENT: testing
 pipelines:
   mhce:
-    group: mygroup
+    group: default
     materials:
       mygit:
         git: https://gitlab.com/qnib-metahub/community-edition.git
