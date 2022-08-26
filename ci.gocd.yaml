@@ -1,6 +1,7 @@
 format_version: 9
 pipelines:
   mhce:
+    group: default
     materials:
       mygit:
         git: https://gitlab.com/qnib-metahub/community-edition.git
