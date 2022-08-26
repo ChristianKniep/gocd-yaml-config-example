@@ -1,12 +1,13 @@
-mypipe:
-  group: mygroup
-  materials:
-    mygit:
-      git: http://example.com/mygit.git
-  stages:
-    - build:
-        jobs:
-          build:
-            tasks:
-             - exec:
-                 command: make
+pipelines:
+  mypipe:
+    group: mygroup
+    materials:
+      mygit:
+        git: http://example.com/mygit.git
+    stages:
+      - build:
+          jobs:
+            build:
+              tasks:
+               - exec:
+                   command: make
